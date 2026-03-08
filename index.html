@@ -1,224 +1,107 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Inés & Sara</title>
-
-<link rel="stylesheet" href="styles.css">
-
-<link href="https://fonts.cdnfonts.com/css/savoye-let" rel="stylesheet">
-<link href="https://fonts.cdnfonts.com/css/glacial-indifference-2" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inés & Sara</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Glacial+Indifference:wght@400;700&family=Savoye+LET:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-<header class="hero">
-
-<img src="Ramos.png" class="ramo-top">
-
-<h1>Inés & Sara</h1>
-
-<p class="subtitle">Una celebración en El Bierzo</p>
-
-<p class="fecha">26.09.26 · 17:30h</p>
-
-<p class="lugar">
-
-De Floriana  
-<br>
-Molinaseca
-
-</p>
-
-<a href="TU_FORMULARIO" class="btn">
-
-Confirmar asistencia
-
-</a>
-
-</header>
-
-<main>
-
-<section class="celebracion-section">
-
-<img src="Celebración.png" class="celebracion">
-
-</section>
-
-<section class="timeline">
-
-<h2>El día</h2>
-
-<div class="timeline-grid">
-
-<div class="timeline-item">
-
-<span>💍</span>
-
-<p>Ceremonia</p>
-
-</div>
-
-<div class="timeline-item">
-
-<span>🍸</span>
-
-<p>Cocktail</p>
-
-</div>
-
-<div class="timeline-item">
-
-<span>🍽</span>
-
-<p>Cena</p>
-
-</div>
-
-<div class="timeline-item">
-
-<span>🪩</span>
-
-<p>Fiesta</p>
-
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Cómo llegar</h2>
-
-<div class="card">
-
-<h3>Desde Barcelona</h3>
-
-<p>Tren Alvia Barcelona – Ponferrada</p>
-
-<p>Coche parando en Burgos</p>
-
-</div>
-
-<div class="card">
-
-<h3>Desde Vall d'Uixó</h3>
-
-<p>AVE Valencia – León</p>
-
-<p>Regional León – Ponferrada</p>
-
-</div>
-
-<a class="btn" href="https://maps.google.com?q=De+Floriana+Molinaseca">
-
-Ver ubicación
-
-</a>
-
-</section>
-
-<section>
-
-<h2>Alojamiento</h2>
-
-<div class="card">
-
-<h3>AC Marriott</h3>
-
-<p>Centro de Ponferrada</p>
-
-</div>
-
-<div class="card">
-
-<h3>Hotel Aroi</h3>
-
-<p>Hotel boutique</p>
-
-</div>
-
-<div class="card">
-
-<h3>Hotel Temple</h3>
-
-<p>Temática medieval</p>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Qué hacer en Ponferrada</h2>
-
-<div class="grid">
-
-<div class="card">🍷 Vinos</div>
-
-<div class="card">🍽 Restaurantes</div>
-
-<div class="card">🚶 Actividades</div>
-
-</div>
-
-</section>
-
-<section class="gift">
-
-<h2>Regalo</h2>
-
-<p>
-
-Vuestra presencia es nuestro mejor regalo.
-
-</p>
-
-<p>
-
-Si queréis ayudarnos con la luna de miel:
-
-</p>
-
-<p class="iban">
-
-ES76 2100 2234 7402 0058 6098
-
-</p>
-
-</section>
-
-<section class="rsvp">
-
-<a class="btn grande" href="TU_FORMULARIO">
-
-Confirmar asistencia
-
-</a>
-
-</section>
-
-</main>
-
-<footer>
-
-<p>
-
-Gracias por formar parte de un día tan especial.
-
-</p>
-
-</footer>
-
-<script src="script.js"></script>
-
+  <header class="hero">
+    <img src="Ramos.png" alt="Ramos de flores" class="hero__decoration">
+    <h1 class="hero__title">Inés & Sara</h1>
+    <p class="hero__subtitle">Una celebración en El Bierzo</p>
+    <p class="hero__date">26.09.26 · 17:30h</p>
+    <p class="hero__location">De Floriana
+Molinaseca</p>
+    <a href="#" class="hero__button">Confirmar asistencia</a>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p class="intro__text">Con cariño e ilusión os invitamos a acompañarnos en nuestra boda.</p>
+      <img src="Celebración.png" alt="Celebración" class="intro__image">
+    </section>
+
+    <section class="timeline">
+      <h2 class="timeline__title">El día</h2>
+      <div class="timeline__card">
+        <div class="timeline__icon">💍</div>
+        <h3 class="timeline__heading">Ceremonia</h3>
+      </div>
+      <div class="timeline__card">
+        <div class="timeline__icon">🍸</div>
+        <h3 class="timeline__heading">Cocktail</h3>
+      </div>
+      <div class="timeline__card">
+        <div class="timeline__icon">🍽</div>
+        <h3 class="timeline__heading">Cena</h3>
+      </div>
+      <div class="timeline__card">
+        <div class="timeline__icon">🪩</div>
+        <h3 class="timeline__heading">Fiesta</h3>
+      </div>
+    </section>
+
+    <section class="travel">
+      <h2 class="travel__title">Cómo llegar</h2>
+      <div class="travel__card">
+        <h3 class="travel__heading">Desde Barcelona</h3>
+        <p class="travel__description">Tren Alvia Barcelona–Ponferrada
+Coche parando a comer en Burgos</p>
+      </div>
+      <div class="travel__card">
+        <h3 class="travel__heading">Desde Vall d'Uixó</h3>
+        <p class="travel__description">AVE Valencia–León
+Regional León–Ponferrada</p>
+      </div>
+      <a href="#" class="travel__button">Ver ubicación</a>
+    </section>
+
+    <section class="accommodation">
+      <h2 class="accommodation__title">Alojamiento</h2>
+      <div class="accommodation__card">
+        <h3 class="accommodation__heading">AC Marriott</h3>
+      </div>
+      <div class="accommodation__card">
+        <h3 class="accommodation__heading">Hotel Aroi</h3>
+      </div>
+      <div class="accommodation__card">
+        <h3 class="accommodation__heading">Hotel Temple</h3>
+      </div>
+    </section>
+
+    <section class="activities">
+      <h2 class="activities__title">Qué hacer en Ponferrada</h2>
+      <div class="activities__card">
+        <div class="activities__icon">🍷</div>
+        <h3 class="activities__heading">Vinos</h3>
+      </div>
+      <div class="activities__card">
+        <div class="activities__icon">🍽</div>
+        <h3 class="activities__heading">Restaurantes</h3>
+      </div>
+      <div class="activities__card">
+        <div class="activities__icon">🚶</div>
+        <h3 class="activities__heading">Actividades</h3>
+      </div>
+    </section>
+
+    <section class="gift">
+      <h2 class="gift__title">Regalo</h2>
+      <p class="gift__text">Vuestra presencia es nuestro mejor regalo.</p>
+      <p class="gift__text">Si queréis ayudarnos con la luna de miel:</p>
+      <p class="gift__iban">IBAN: ES76 2100 2234 7402 0058 6098</p>
+    </section>
+
+    <footer class="rsvp">
+      <a href="#" class="rsvp__button">Confirmar asistencia</a>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
