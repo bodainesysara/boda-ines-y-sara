@@ -1,29 +1,26 @@
-// Función para manejar el envío del formulario
-function handleRSVPSubmit(event) {
-  event.preventDefault();
+const sections = document.querySelectorAll("section");
 
-  // Obtener los datos del formulario
-  const formData = new FormData(event.target);
+const observer = new IntersectionObserver(entries => {
 
-  // Aquí puedes enviar los datos a un servicio de formularios (por ejemplo, Formspree o Google Forms)
-  console.log('Datos del formulario:', Object.fromEntries(formData));
+entries.forEach(entry => {
 
-  // Limpiar el formulario
-  event.target.reset();
+if(entry.isIntersecting){
+
+entry.target.style.opacity = 1;
+entry.target.style.transform = "translateY(0)";
+
 }
 
-// Agregar el evento de envío del formulario
-const rsvpForm = document.querySelector('.rsvp form');
-rsvpForm.addEventListener('submit', handleRSVPSubmit);
+});
 
-// Función para mostrar el formulario de confirmación
-const rsvpButton = document.querySelector('.hero .btn');
-const rsvpSection = document.querySelector('.rsvp');
+});
 
-rsvpButton.addEventListener('click', () => {
-  rsvpSection.style.display = 'block';
-  window.scrollTo({
-    top: rsvpSection.offsetTop,
-    behavior: 'smooth'
-  });
+sections.forEach(section => {
+
+section.style.opacity = 0;
+section.style.transform = "translateY(40px)";
+section.style.transition = "all .8s ease";
+
+observer.observe(section);
+
 });
