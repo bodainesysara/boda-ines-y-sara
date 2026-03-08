@@ -1,122 +1,158 @@
-/* Estilos generales */
-body {
-  font-family: 'Cormorant Garamond', serif;
-  color: #333;
-  margin: 0;
-  padding: 0;
+:root{
+
+--vino:#7b1f29;
+--crema:#f7efeb;
+--gris:#444;
+
 }
 
-h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  color: #6a1a21;
+body{
+
+font-family:'Glacial Indifference', sans-serif;
+background:var(--crema);
+margin:0;
+text-align:center;
+color:var(--gris);
+
 }
 
-a {
-  color: #6a1a21;
-  text-decoration: none;
+main{
+
+max-width:620px;
+margin:auto;
+padding:25px;
+
 }
 
-.btn {
-  display: inline-block;
-  background-color: #6a1a21;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  transition: background-color 0.3s;
+.hero{
+
+padding:120px 20px 80px;
+
 }
 
-.btn:hover {
-  background-color: #4a1117;
+h1{
+
+font-family:'Savoye LET', cursive;
+font-size:4rem;
+color:var(--vino);
+margin:0;
+
 }
 
-/* Estilos del header */
-header {
-  background-image: url('hero-background.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #fff;
+.subtitle{
+
+font-size:1.4rem;
+margin-top:10px;
+
 }
 
-.hero h1 {
-  font-size: 4rem;
-  margin-bottom: 10px;
+.fecha{
+
+margin-top:15px;
+
 }
 
-.hero p {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
+.lugar{
+
+margin-top:10px;
+
 }
 
-/* Estilos de las secciones */
-section {
-  padding: 80px 20px;
+h2{
+
+font-family:'Savoye LET', cursive;
+font-size:2.4rem;
+color:var(--vino);
+margin-top:80px;
+
 }
 
-.wedding, .gift {
-  background-color: #f5f5f5;
+.btn{
+
+display:inline-block;
+background:var(--vino);
+color:white;
+padding:14px 30px;
+border-radius:40px;
+text-decoration:none;
+margin-top:20px;
+
 }
 
-.travel-options, .hotels, .activity-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
+.btn.grande{
+
+font-size:1.1rem;
+padding:16px 34px;
+
 }
 
-.travel-option, .hotel, .activity-column {
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.card{
+
+background:white;
+padding:20px;
+border-radius:14px;
+margin-top:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+
 }
 
-/* Estilos del formulario */
-.rsvp {
-  background-color: #f5f5f5;
+.timeline-grid{
+
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+margin-top:20px;
+
 }
 
-.form-group {
-  margin-bottom: 20px;
+.timeline-item span{
+
+font-size:2rem;
+
 }
 
-label {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 5px;
+.grid{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:10px;
+
 }
 
-input, select, textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 16px;
+.iban{
+
+font-weight:600;
+letter-spacing:1px;
+
 }
 
-/* Estilos del footer */
-footer {
-  background-color: #6a1a21;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
+.ramo-top{
+
+width:160px;
+display:block;
+margin:auto;
+
 }
 
-/* Estilos responsive */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 3rem;
-  }
+.celebracion{
 
-  .hero p {
-    font-size: 1.2rem;
-  }
+width:260px;
+display:block;
+margin:30px auto;
 
-  .travel-options, .hotels, .activity-grid {
-    grid-template-columns: 1fr;
-  }
+}
+
+img{
+
+max-width:100%;
+height:auto;
+
+}
+
+footer{
+
+margin-top:80px;
+padding:40px 20px;
+font-size:0.9rem;
+
 }
